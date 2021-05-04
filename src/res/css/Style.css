@@ -1,0 +1,11 @@
+/* Classes */
+.container-fluid {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.top-section {
+  padding: 10%;
+  background-color: red;
+  color: #fff;
+}
