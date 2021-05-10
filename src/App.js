@@ -1,5 +1,7 @@
-//CSS
+// CSS
 import "./res/css/Style.css";
+// Components
+import FooterComponent from "./res/components/FooterComponent";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
         <section className="top-section d-flex justify-content-center">
           <h1>Hello World.</h1>
         </section>
+        <FooterComponent />
       </div>
     </>
   );

@@ -3,7 +3,7 @@ function FooterComponent() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <section className="container-footer text-center">
+      <section className="footer-section text-center">
         <footer>
           <p>Copyright© {currentYear} Demario Douce. All rights reserved.</p>
         </footer>
