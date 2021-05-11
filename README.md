@@ -4,4 +4,4 @@
 
 ## Screenshot
 
-## ![Mockup image.](/Mockups/AirPolluti.png)
+## ![Mockup image.](/Mockups/GwehCovid19.png)
