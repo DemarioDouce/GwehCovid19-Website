@@ -33,7 +33,12 @@ function App() {
               </button>
             </div>
             <div className="col text-center">
-              <img src={TopSectionImage} width="80%" height="80%"></img>
+              <img
+                src={TopSectionImage}
+                alt="Coronavirus."
+                width="80%"
+                height="80%"
+              ></img>
             </div>
           </div>
         </section>
