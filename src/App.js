@@ -11,7 +11,7 @@ function App() {
       <div className="container-fluid">
         <section className="top-section">
           <div className="row d-flex align-items-center">
-            <div className="col">
+            <div className="col-lg-6">
               <p className="badge text-wrap">Get Well Soon, Earth!</p>
               <h1 className="fw-bold mt-3 top-h1-text">Let's Help</h1>
               <h1 className="fw-bold top-h1-text">Recover The Earth,</h1>
@@ -25,14 +25,14 @@ function App() {
                 The outbreak of the coronavirus issue or called covid-19 makes
                 the Earth grieve.
               </p>
-              <button type="button" class="btn-primary rounded">
+              <button type="button" class="btn-primary rounded mb-5">
                 Learn More
               </button>
-              <button type="button" class="btn-secondary rounded">
+              <button type="button" class="btn-secondary rounded mb-5">
                 Watch Video
               </button>
             </div>
-            <div className="col text-center">
+            <div className="col-lg-6 text-center">
               <img
                 src={TopSectionImage}
                 alt="Coronavirus."
