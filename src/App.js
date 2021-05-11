@@ -3,22 +3,25 @@ import "./res/css/Style.css";
 // Components
 import FooterComponent from "./res/components/FooterComponent";
 // Image
-import TopSectionImage from "./res/images/TopSectionImage.jpg";
+import TopSectionImage from "./res/images/TopSectionImage.png";
 
 function App() {
   return (
     <>
       <div className="container-fluid">
         <section className="top-section">
-          <div className="row">
+          <div className="row d-flex align-items-center">
             <div className="col">
               <p className="badge text-wrap">Get Well Soon, Earth!</p>
-              <h1 className="fw-bold mt-3">Let's Help</h1>
-              <h1 className="fw-bold">Recover The Earth,</h1>
-              <h1 className="fw-bold mb-3" style={{ color: "#f8c45a" }}>
+              <h1 className="fw-bold mt-3 top-h1-text">Let's Help</h1>
+              <h1 className="fw-bold top-h1-text">Recover The Earth,</h1>
+              <h1
+                className="fw-bold mb-3 top-h1-text"
+                style={{ color: "#f8c45a" }}
+              >
                 Starts From Us!
               </h1>
-              <p className="text-muted text-break mb-5">
+              <p className="text-muted text-break mb-5 top-p-text">
                 The outbreak of the coronavirus issue or called covid-19 makes
                 the Earth grieve.
               </p>
@@ -29,7 +32,9 @@ function App() {
                 Watch Video
               </button>
             </div>
-            <div className="col">2 of 2</div>
+            <div className="col text-center">
+              <img src={TopSectionImage} width="80%" height="80%"></img>
+            </div>
           </div>
         </section>
         <FooterComponent />
