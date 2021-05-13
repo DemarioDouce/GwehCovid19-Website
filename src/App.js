@@ -3,6 +3,8 @@ import "./res/css/Style.css";
 // Components
 import FooterComponent from "./res/components/FooterComponent";
 import CardComponent from "./res/components/CardComponent";
+import PrimaryButtonComponent from "./res/components/PrimaryButtonComponent";
+import SecondaryButtonComponent from "./res/components/SecondaryButtonComponent";
 // Image
 import TopSectionImage from "./res/images/TopSectionImage.png";
 
@@ -27,12 +29,8 @@ function App() {
                 The outbreak of the coronavirus issue or called covid-19 makes
                 the Earth grieve.
               </p>
-              <button type="button" class="btn-primary rounded mb-5">
-                Learn More
-              </button>
-              <button type="button" class="btn-secondary rounded mb-5">
-                Watch Video
-              </button>
+              <PrimaryButtonComponent text="View By Country" />
+              <SecondaryButtonComponent text="Watch Video" />
             </div>
             <div className="col-lg-6 text-center mb-5">
               <img
