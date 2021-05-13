@@ -6,7 +6,7 @@ function CardComponent({ title, text, color }) {
         style={{ width: "90%", color: "#ffffff", backgroundColor: color }}
       >
         <div class="card-body">
-          <h2 class="card-title">{title}</h2>
+          <h3 class="card-title">{title}</h3>
           <p class="card-text">{text}</p>
         </div>
       </div>
