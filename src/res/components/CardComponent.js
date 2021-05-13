@@ -3,7 +3,12 @@ function CardComponent({ title, text, color }) {
     <>
       <div
         class="card shadow-sm rounded"
-        style={{ width: "90%", color: "#ffffff", backgroundColor: color }}
+        style={{
+          width: "90%",
+          color: "#ffffff",
+          backgroundColor: color,
+          border: "2px solid #ffffff",
+        }}
       >
         <div class="card-body">
           <h3 class="card-title">{title}</h3>
