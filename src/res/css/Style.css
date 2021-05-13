@@ -5,6 +5,10 @@
   --secondary-color: #d50000;
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
 /* Classes */
 
 .container-fluid {
@@ -13,7 +17,7 @@
 }
 
 .top-section {
-  padding: 8%;
+  padding: 8% 8% 3% 8%;
   background-color: var(--primary-color);
   color: #ffffff;
 }
@@ -69,4 +73,10 @@
 .btn-secondary:hover {
   background-color: #f8c45a;
   border: 2px solid #ffffff;
+}
+
+.middle-section {
+  padding: 0% 8% 8% 8%;
+  background-color: var(--primary-color);
+  color: #ffffff;
 }

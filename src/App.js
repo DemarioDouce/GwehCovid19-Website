@@ -2,6 +2,7 @@
 import "./res/css/Style.css";
 // Components
 import FooterComponent from "./res/components/FooterComponent";
+import CardComponent from "./res/components/CardComponent";
 // Image
 import TopSectionImage from "./res/images/TopSectionImage.png";
 
@@ -32,13 +33,30 @@ function App() {
                 Watch Video
               </button>
             </div>
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center mb-5">
               <img
                 src={TopSectionImage}
                 alt="Coronavirus."
                 width="80%"
                 height="80%"
               ></img>
+            </div>
+          </div>
+        </section>
+        <section className="middle-section">
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              <CardComponent title="Active" text="2.117.846" color="#d50000" />
+            </div>
+            <div class="col-lg-3 mb-3">
+              <CardComponent title="Deaths" text="244.780" color="#f8c45a" />
+            </div>
+            <div class="col-lg-3 mb-3">
+              <CardComponent
+                title="Recovered"
+                text="1.117.846"
+                color="#d50000"
+              />
             </div>
           </div>
         </section>
