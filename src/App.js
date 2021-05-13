@@ -7,6 +7,7 @@ import CardComponent from "./res/components/CardComponent";
 import TopSectionImage from "./res/images/TopSectionImage.png";
 
 function App() {
+  //https://api.covid19api.com/summary
   return (
     <>
       <div className="container-fluid">
