@@ -60,12 +60,14 @@ function App() {
               <a
                 href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
                 target="_blank"
+                rel="noreferrer"
               >
                 <PrimaryButtonComponent text="Learn More" />
               </a>
               <a
                 href="https://www.youtube.com/watch?v=BtN-goy9VOY&ab_channel=JohnsHopkinsMedicineJohnsHopkinsMedicine"
                 target="_blank"
+                rel="noreferrer"
               >
                 <SecondaryButtonComponent text="Watch Video" />
               </a>
