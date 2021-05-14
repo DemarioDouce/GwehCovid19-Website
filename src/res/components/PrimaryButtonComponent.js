@@ -1,7 +1,7 @@
 function PrimaryButtonComponent({ text }) {
   return (
     <>
-      <button type="button" class="btn-primary rounded mb-3">
+      <button type="button" className="btn-primary rounded mb-3">
         {text}
       </button>
     </>

@@ -60,6 +60,16 @@ body {
   border: 2px solid #ffffff;
 }
 
+.btn-primary:active {
+  background-color: #f8c45a;
+  border: 2px solid #ffffff;
+}
+
+.btn-primary:focus {
+  background-color: #f8c45a;
+  border: 2px solid #ffffff;
+}
+
 .btn-secondary {
   background-color: var(--primary-color);
   color: #ffffff;
@@ -75,6 +85,15 @@ body {
   border: 2px solid #ffffff;
 }
 
+.btn-secondary:active {
+  background-color: #f8c45a;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:focus {
+  background-color: #f8c45a;
+  border: 2px solid #ffffff;
+}
 .middle-section {
   padding: 0% 8% 8% 8%;
   background-color: var(--primary-color);

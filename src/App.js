@@ -1,3 +1,5 @@
+// React Default
+import React, { useState, useEffect } from "react";
 // CSS
 import "./res/css/Style.css";
 // Components
@@ -7,9 +9,35 @@ import PrimaryButtonComponent from "./res/components/PrimaryButtonComponent";
 import SecondaryButtonComponent from "./res/components/SecondaryButtonComponent";
 // Image
 import TopSectionImage from "./res/images/TopSectionImage.png";
+// Packages
+import axios from "axios";
 
 function App() {
-  //https://api.covid19api.com/summary
+  //States
+  const [activeText, setActiveText] = useState("");
+  const [deathsText, setDeathsText] = useState("");
+  const [recoveredText, setRecoveredText] = useState("");
+  const [dateText, setDateText] = useState("");
+  //Use Effect
+  useEffect(() => {
+    fetchData();
+  });
+
+  function fetchData() {
+    axios
+      .get("https://api.covid19api.com/summary")
+      .then((response) => {
+        // handle success
+        setActiveText(response.data.Global.TotalConfirmed);
+        setDeathsText(response.data.Global.TotalDeaths);
+        setRecoveredText(response.data.Global.TotalRecovered);
+        setDateText(response.data.Global.Date);
+      })
+      .catch((e) => {
+        // handle error
+      });
+  }
+
   return (
     <>
       <div className="container-fluid">
@@ -29,8 +57,18 @@ function App() {
                 The outbreak of the coronavirus issue or called covid-19 makes
                 the Earth grieve.
               </p>
-              <PrimaryButtonComponent text="View By Country" />
-              <SecondaryButtonComponent text="Watch Video" />
+              <a
+                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+                target="_blank"
+              >
+                <PrimaryButtonComponent text="Learn More" />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=BtN-goy9VOY&ab_channel=JohnsHopkinsMedicineJohnsHopkinsMedicine"
+                target="_blank"
+              >
+                <SecondaryButtonComponent text="Watch Video" />
+              </a>
             </div>
             <div className="col-lg-6 text-center mb-5">
               <img
@@ -43,17 +81,18 @@ function App() {
           </div>
         </section>
         <section className="middle-section">
-          <div class="row">
-            <div class="col-lg-3 mb-3">
-              <CardComponent title="Active" text="2.117.846" color="#d50000" />
+          <p className="text-muted text-break">Date: {dateText}</p>
+          <div className="row">
+            <div className="col-lg-3 mb-3">
+              <CardComponent title="Active" text={activeText} color="#d50000" />
             </div>
-            <div class="col-lg-3 mb-3">
-              <CardComponent title="Deaths" text="244.780" color="#f8c45a" />
+            <div className="col-lg-3 mb-3">
+              <CardComponent title="Deaths" text={deathsText} color="#f8c45a" />
             </div>
-            <div class="col-lg-3 mb-3">
+            <div className="col-lg-3 mb-3">
               <CardComponent
                 title="Recovered"
-                text="1.117.846"
+                text={recoveredText}
                 color="#d50000"
               />
             </div>

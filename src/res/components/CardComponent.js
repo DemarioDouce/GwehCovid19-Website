@@ -2,7 +2,7 @@ function CardComponent({ title, text, color }) {
   return (
     <>
       <div
-        class="card shadow-sm rounded"
+        className="card shadow-sm rounded"
         style={{
           width: "90%",
           color: "#ffffff",
@@ -10,9 +10,9 @@ function CardComponent({ title, text, color }) {
           border: "2px solid #ffffff",
         }}
       >
-        <div class="card-body">
-          <h3 class="card-title">{title}</h3>
-          <p class="card-text">{text}</p>
+        <div className="card-body">
+          <h3 className="card-title">{title}</h3>
+          <p className="card-text">{text}</p>
         </div>
       </div>
     </>
